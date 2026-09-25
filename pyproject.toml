@@ -10,6 +10,7 @@ authors = [
 ]
 description = "A modern toolkit & AI Agent Skill for Telegram Bot Premium Custom Emojis, Aiogram 3 UI cards, inline keyboard custom emoji icons, and pack scanning."
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -17,7 +18,6 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Communications :: Chat",
     "Topic :: Software Development :: Libraries :: Python Modules",
@@ -46,3 +46,7 @@ dev = ["pytest>=7.0.0", "aiohttp>=3.8.0", "aiogram>=3.0.0"]
 [project.scripts]
 tg-emoji-scan = "telegram_premium_emojis.scanner:main"
 tg-emoji-lint = "telegram_premium_emojis.validator:main"
+
+[tool.setuptools.packages.find]
+include = ["telegram_premium_emojis*"]
+

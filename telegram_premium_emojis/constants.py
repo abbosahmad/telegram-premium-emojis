@@ -36,7 +36,18 @@ class CommonIcons:
     CROWN = "5807868868886009920"       # 👑
     COIN = "5258368777350816286"        # 🪙
     CARD = "5258260149037965799"        # 💳
-    FIRE = "5877318502947229960"        # 🔥
+    FIRE = "6008118472066732010"        # 🔥
+
+    # Statistics & Gamification
+    CHART_BAR = "5877485980901971030"   # 📊 Stats / Analytics
+    CHART_UP = "5776219138917668486"    # 📈 Growth / Rank
+    TROPHY = "5961051261204696786"      # 🏆 / 🥇 Total score (XP) & Trophy/Medal
+    TARGET = "5920052658743283381"      # 🎯 Solved / Goal
+    ROCKET = "5875506366050734240"      # 🚀 Boost / Level-up
+    ID_BADGE = "5258477770735885832"    # 🆔 / 🪪 ID Badge
+    MEDAL_GOLD = "5961051261204696786"  # 🥇 1st place
+    MEDAL_SILVER = "5447203607294265305"# 🥈 2nd place
+    MEDAL_BRONZE = "5453902265922376865"# 🥉 3rd place
 
     # Content & Documents
     DOCUMENT = "5258477770735885832"    # 📄
@@ -47,7 +58,7 @@ class CommonIcons:
     DOWNLOAD = "5258336354642697821"    # ⬇️
     UPLOAD = "5260652420052032852"      # ⬆️
     SETTINGS = "5258420634785947640"    # ⚙️
-    PROFILE = "5258362837411045098"     # 👤
+    PROFILE = "5771887475421090729"     # 👤
     HELP = "5258503720928288433"        # ❓
     ROBOT = "5258093637450866522"       # 🤖
     SPARKLES = "5877318502947229960"    # ✨
@@ -77,6 +88,15 @@ ICON_FALLBACKS = {
     CommonIcons.COIN: "🪙",
     CommonIcons.CARD: "💳",
     CommonIcons.FIRE: "🔥",
+    CommonIcons.CHART_BAR: "📊",
+    CommonIcons.CHART_UP: "📈",
+    CommonIcons.TROPHY: "🏆",
+    CommonIcons.TARGET: "🎯",
+    CommonIcons.ROCKET: "🚀",
+    CommonIcons.ID_BADGE: "🆔",
+    CommonIcons.MEDAL_GOLD: "🥇",
+    CommonIcons.MEDAL_SILVER: "🥈",
+    CommonIcons.MEDAL_BRONZE: "🥉",
     CommonIcons.DOCUMENT: "📄",
     CommonIcons.FOLDER: "📁",
     CommonIcons.EDIT: "✏️",
@@ -90,3 +110,4 @@ ICON_FALLBACKS = {
     CommonIcons.ROBOT: "🤖",
     CommonIcons.SPARKLES: "✨",
 }
+

@@ -94,20 +94,69 @@ Telegram Bot API 10.x and Aiogram 3 support button color styles:
 - `success`: Green button, used for the primary positive action or recommended purchase tier.
 - `danger`: Red button, strictly reserved for `Back`, `Cancel`, or destructive actions (`Delete`).
 
+### Rule 6: In-Text Data, Statistics & Gamification Cards
+Never send raw, unstyled Unicode emojis in user profiles, dashboards, statistics, or gamification messages. Always render all data points as verified `<tg-emoji>` tags inside a card layout.
+
+❌ **WRONG (Raw Unicode Emojis — looks unpolished & dated):**
+```html
+📊 Shaxsiy Statistika
+
+👤 Abbos (@AbbosA)
+🆔 ID: 5654706656
+
+🏆 Umumiy ball (XP): 71 ball
+📈 Umumiy reytingdagi o'rni: #7
+🎯 Yechilgan testlar: 11 ta
+📁 Yaratilgan testlar: 4 ta
+🔥 Kunlik seriya: 1 kun
+⚡ Kreditlar balansi: 3288 ta (Standart)
+
+Har bir to'g'ri javob uchun + 1 XP olasiz va umumiy reytingda ko'tarilasiz! 🚀
+```
+
+✅ **CORRECT (Full Telegram Premium Card UI with `<tg-emoji>` & spacer):**
+```html
+<b><tg-emoji emoji-id="5877485980901971030">📊</tg-emoji> Shaxsiy Statistika</b>
+
+<tg-emoji emoji-id="5771887475421090729">👤</tg-emoji> <b>Abbos</b> (@AbbosA)
+<tg-emoji emoji-id="5258477770735885832">🆔</tg-emoji> ID: <code>5654706656</code>
+
+<blockquote><tg-emoji emoji-id="5961051261204696786">🏆</tg-emoji> <b>Umumiy ball (XP):</b> 71 ball
+<tg-emoji emoji-id="5776219138917668486">📈</tg-emoji> <b>Umumiy reytingdagi o'rni:</b> #7
+<tg-emoji emoji-id="5920052658743283381">🎯</tg-emoji> <b>Yechilgan testlar:</b> 11 ta
+<tg-emoji emoji-id="5875206779196935950">📁</tg-emoji> <b>Yaratilgan testlar:</b> 4 ta
+<tg-emoji emoji-id="6008118472066732010">🔥</tg-emoji> <b>Kunlik seriya:</b> 1 kun
+<tg-emoji emoji-id="5843553939672274145">⚡</tg-emoji> <b>Kreditlar balansi:</b> 3288 ta (Standart)
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</blockquote>
+
+<i>Har bir to'g'ri javob uchun +1 XP olasiz va umumiy reytingda ko'tarilasiz! <tg-emoji emoji-id="5875506366050734240">🚀</tg-emoji></i>
+```
+
 ---
 
-## 3. Top 30 Essential Custom Emoji IDs Quick-Reference
+## 3. Essential Custom Emoji IDs Quick-Reference
 
 | Role | Fallback | Custom Emoji ID | Full HTML Tag |
 |---|---|---|---|
 | **Back** | ⬅️ | `5877536313623711363` | `<tg-emoji emoji-id="5877536313623711363">⬅️</tg-emoji>` |
 | **Home** | 🏠 | `5807868868886009920` | `<tg-emoji emoji-id="5807868868886009920">🏠</tg-emoji>` |
-| **Confirm** | ✅ | `5920052658743283381` | `<tg-emoji emoji-id="5920052658743283381">✅</tg-emoji>` |
+| **Confirm / Done** | ✅ | `5920052658743283381` | `<tg-emoji emoji-id="5920052658743283381">✅</tg-emoji>` |
 | **Cancel** | ❌ | `5258226313285607065` | `<tg-emoji emoji-id="5258226313285607065">❌</tg-emoji>` |
-| **Diamond** | 💎 | `5807465992363710697` | `<tg-emoji emoji-id="5807465992363710697">💎</tg-emoji>` |
-| **Star** | ⭐️ | `5874948844935974490` | `<tg-emoji emoji-id="5874948844935974490">⭐️</tg-emoji>` |
-| **Lightning** | ⚡️ | `5843553939672274145` | `<tg-emoji emoji-id="5843553939672274145">⚡️</tg-emoji>` |
-| **Crown** | 👑 | `5807868868886009920` | `<tg-emoji emoji-id="5807868868886009920">👑</tg-emoji>` |
+| **Diamond / VIP** | 💎 | `5807465992363710697` | `<tg-emoji emoji-id="5807465992363710697">💎</tg-emoji>` |
+| **Star / Premium** | ⭐️ | `5874948844935974490` | `<tg-emoji emoji-id="5874948844935974490">⭐️</tg-emoji>` |
+| **Lightning / Energy** | ⚡️ | `5843553939672274145` | `<tg-emoji emoji-id="5843553939672274145">⚡️</tg-emoji>` |
+| **Crown / Leader** | 👑 | `5807868868886009920` | `<tg-emoji emoji-id="5807868868886009920">👑</tg-emoji>` |
+| **Stats / Analytics** | 📊 | `5877485980901971030` | `<tg-emoji emoji-id="5877485980901971030">📊</tg-emoji>` |
+| **Growth / Rank** | 📈 | `5776219138917668486` | `<tg-emoji emoji-id="5776219138917668486">📈</tg-emoji>` |
+| **Trophy / XP** | 🏆 | `5961051261204696786` | `<tg-emoji emoji-id="5961051261204696786">🏆</tg-emoji>` |
+| **Target / Goal** | 🎯 | `5920052658743283381` | `<tg-emoji emoji-id="5920052658743283381">🎯</tg-emoji>` |
+| **Fire / Streak** | 🔥 | `6008118472066732010` | `<tg-emoji emoji-id="6008118472066732010">🔥</tg-emoji>` |
+| **Rocket / Boost** | 🚀 | `5875506366050734240` | `<tg-emoji emoji-id="5875506366050734240">🚀</tg-emoji>` |
+| **User / Profile** | 👤 | `5771887475421090729` | `<tg-emoji emoji-id="5771887475421090729">👤</tg-emoji>` |
+| **ID / Badge** | 🆔 | `5258477770735885832` | `<tg-emoji emoji-id="5258477770735885832">🆔</tg-emoji>` |
+| **Medal Gold (1st)** | 🥇 | `5961051261204696786` | `<tg-emoji emoji-id="5961051261204696786">🥇</tg-emoji>` |
+| **Medal Silver (2nd)**| 🥈 | `5447203607294265305` | `<tg-emoji emoji-id="5447203607294265305">🥈</tg-emoji>` |
+| **Medal Bronze (3rd)**| 🥉 | `5453902265922376865` | `<tg-emoji emoji-id="5453902265922376865">🥉</tg-emoji>` |
 | **Refresh** | 🔄 | `5260687119092817530` | `<tg-emoji emoji-id="5260687119092817530">🔄</tg-emoji>` |
 | **Trash** | 🗑 | `5258130763148172425` | `<tg-emoji emoji-id="5258130763148172425">🗑</tg-emoji>` |
 | **Document** | 📄 | `5258477770735885832` | `<tg-emoji emoji-id="5258477770735885832">📄</tg-emoji>` |
@@ -124,6 +173,7 @@ Telegram Bot API 10.x and Aiogram 3 support button color styles:
 | **Attach** | 📎 | `5260730055880876557` | `<tg-emoji emoji-id="5260730055880876557">📎</tg-emoji>` |
 | **Sparkles**| ✨ | `5877318502947229960` | `<tg-emoji emoji-id="5877318502947229960">✨</tg-emoji>` |
 | **Robot** | 🤖 | `5258093637450866522` | `<tg-emoji emoji-id="5258093637450866522">🤖</tg-emoji>` |
+
 
 ---
 
