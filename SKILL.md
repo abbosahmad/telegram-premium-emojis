@@ -114,27 +114,66 @@ Never send raw, unstyled Unicode emojis in user profiles, dashboards, statistics
 Har bir to'g'ri javob uchun + 1 XP olasiz va umumiy reytingda ko'tarilasiz! 🚀
 ```
 
-✅ **CORRECT (Full Telegram Premium Card UI with `<tg-emoji>` & spacer):**
+✅ **CORRECT (Full Telegram Premium Card UI with Animated `<tg-emoji>` & spacer):**
 ```html
-<b><tg-emoji emoji-id="5877485980901971030">📊</tg-emoji> Shaxsiy Statistika</b>
+<b><tg-emoji emoji-id="5431577498364158238">📊</tg-emoji> Shaxsiy Statistika</b>
 
-<tg-emoji emoji-id="5771887475421090729">👤</tg-emoji> <b>Abbos</b> (@AbbosA)
-<tg-emoji emoji-id="5258477770735885832">🆔</tg-emoji> ID: <code>5654706656</code>
+<tg-emoji emoji-id="5373012449597335010">👤</tg-emoji> <b>Abbos</b> (@AbbosA)
+<tg-emoji emoji-id="5422683699130933153">🪪</tg-emoji> ID: <code>5654706656</code>
 
-<blockquote><tg-emoji emoji-id="5961051261204696786">🏆</tg-emoji> <b>Umumiy ball (XP):</b> 71 ball
-<tg-emoji emoji-id="5776219138917668486">📈</tg-emoji> <b>Umumiy reytingdagi o'rni:</b> #7
-<tg-emoji emoji-id="5920052658743283381">🎯</tg-emoji> <b>Yechilgan testlar:</b> 11 ta
-<tg-emoji emoji-id="5875206779196935950">📁</tg-emoji> <b>Yaratilgan testlar:</b> 4 ta
-<tg-emoji emoji-id="6008118472066732010">🔥</tg-emoji> <b>Kunlik seriya:</b> 1 kun
-<tg-emoji emoji-id="5843553939672274145">⚡</tg-emoji> <b>Kreditlar balansi:</b> 3288 ta (Standart)
+<blockquote><tg-emoji emoji-id="5409008750893734809">🏆</tg-emoji> <b>Umumiy ball (XP):</b> 71 ball
+<tg-emoji emoji-id="5373001317042101552">📈</tg-emoji> <b>Umumiy reytingdagi o'rni:</b> #7
+<tg-emoji emoji-id="5350460637182993292">🎯</tg-emoji> <b>Yechilgan testlar:</b> 11 ta
+<tg-emoji emoji-id="5433653135799228968">📁</tg-emoji> <b>Yaratilgan testlar:</b> 4 ta
+<tg-emoji emoji-id="5420315771991497307">🔥</tg-emoji> <b>Kunlik seriya:</b> 1 kun
+<tg-emoji emoji-id="5431449001532594346">⚡</tg-emoji> <b>Kreditlar balansi:</b> 3288 ta (Standart)
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</blockquote>
 
-<i>Har bir to'g'ri javob uchun +1 XP olasiz va umumiy reytingda ko'tarilasiz! <tg-emoji emoji-id="5875506366050734240">🚀</tg-emoji></i>
+<i>Har bir to'g'ri javob uchun +1 XP olasiz va umumiy reytingda ko'tarilasiz! <tg-emoji emoji-id="5445284980978621387">🚀</tg-emoji></i>
 ```
 
 ---
 
-## 3. Essential Custom Emoji IDs Quick-Reference
+## 3. Recommended Emoji Packs & Quick References
+
+### 3.1. Primary In-Text Animated Pack: `RestrictedEmoji`
+> [!TIP]
+> **Link:** [https://t.me/addemoji/RestrictedEmoji](https://t.me/addemoji/RestrictedEmoji) (997 Animated Emojis)
+> This official Telegram animated set is **the golden standard for in-text messages, cards, stats, and gamification**.
+
+| Role | Fallback | Custom Emoji ID | Full HTML Tag |
+|---|---|---|---|
+| **Stats / Chart** | 📊 | `5431577498364158238` | `<tg-emoji emoji-id="5431577498364158238">📊</tg-emoji>` |
+| **User Profile** | 👤 | `5373012449597335010` | `<tg-emoji emoji-id="5373012449597335010">👤</tg-emoji>` |
+| **ID Badge / Card** | 🪪 | `5422683699130933153` | `<tg-emoji emoji-id="5422683699130933153">🪪</tg-emoji>` |
+| **Trophy / XP** | 🏆 | `5409008750893734809` | `<tg-emoji emoji-id="5409008750893734809">🏆</tg-emoji>` |
+| **Growth / Rank** | 📈 | `5373001317042101552` | `<tg-emoji emoji-id="5373001317042101552">📈</tg-emoji>` |
+| **Target / Solved** | 🎯 | `5350460637182993292` | `<tg-emoji emoji-id="5350460637182993292">🎯</tg-emoji>` |
+| **Folder / Tasks** | 📁 | `5433653135799228968` | `<tg-emoji emoji-id="5433653135799228968">📁</tg-emoji>` |
+| **Fire / Streak** | 🔥 | `5420315771991497307` | `<tg-emoji emoji-id="5420315771991497307">🔥</tg-emoji>` |
+| **Energy / Balance**| ⚡️ | `5431449001532594346` | `<tg-emoji emoji-id="5431449001532594346">⚡️</tg-emoji>` |
+| **Rocket / Boost** | 🚀 | `5445284980978621387` | `<tg-emoji emoji-id="5445284980978621387">🚀</tg-emoji>` |
+| **Star / Premium** | ⭐️ | `5435957248314579621` | `<tg-emoji emoji-id="5435957248314579621">⭐️</tg-emoji>` |
+| **Crown / Winner** | 👑 | `5467406098367521267` | `<tg-emoji emoji-id="5467406098367521267">👑</tg-emoji>` |
+| **Diamond / VIP** | 💎 | `5471952986970267163` | `<tg-emoji emoji-id="5471952986970267163">💎</tg-emoji>` |
+| **Success / Done** | ✅ | `5427009714745517609` | `<tg-emoji emoji-id="5427009714745517609">✅</tg-emoji>` |
+| **Error / Cancel** | ❌ | `5465665476971471368` | `<tg-emoji emoji-id="5465665476971471368">❌</tg-emoji>` |
+| **Idea / Hint** | 💡 | `5472146462362048818` | `<tg-emoji emoji-id="5472146462362048818">💡</tg-emoji>` |
+| **Sparkles / AI** | ✨ | `5472164874886846699` | `<tg-emoji emoji-id="5472164874886846699">✨</tg-emoji>` |
+| **Coin / Credits** | 🪙 | `5379600444098093058` | `<tg-emoji emoji-id="5379600444098093058">🪙</tg-emoji>` |
+| **Robot** | 🤖 | `5372981976804366741` | `<tg-emoji emoji-id="5372981976804366741">🤖</tg-emoji>` |
+| **Timer / Pending**| ⏳ | `5451732530048802485` | `<tg-emoji emoji-id="5451732530048802485">⏳</tg-emoji>` |
+| **Celebration** | 🎉 | `5436040291507247633` | `<tg-emoji emoji-id="5436040291507247633">🎉</tg-emoji>` |
+| **Gift / Bonus** | 🎁 | `5199749070830197566` | `<tg-emoji emoji-id="5199749070830197566">🎁</tg-emoji>` |
+| **Note / Pen** | 📝 | `5334882760735885832` | `<tg-emoji emoji-id="5334882760735885832">📝</tg-emoji>` |
+| **Search** | 🔍 | `5188217332748527444` | `<tg-emoji emoji-id="5188217332748527444">🔍</tg-emoji>` |
+| **Uzbekistan** | 🇺🇿 | `5449829434334912605` | `<tg-emoji emoji-id="5449829434334912605">🇺🇿</tg-emoji>` |
+
+---
+
+### 3.2. Primary Inline Button Icon Pack: `TgAndroidIcons`
+> For **Inline Keyboard Buttons** (`icon_custom_emoji_id`), clean flat Material design icons (`TgAndroidIcons`) provide the sharpest contrast and optimal fit.
+
 
 | Role | Fallback | Custom Emoji ID | Full HTML Tag |
 |---|---|---|---|

@@ -64,6 +64,40 @@ class CommonIcons:
     SPARKLES = "5877318502947229960"    # ✨
 
 
+class RestrictedIcons:
+    """
+    Animated Custom Emojis from pack 'RestrictedEmoji' (https://t.me/addemoji/RestrictedEmoji).
+    Officially recommended for in-text card bodies, statistics, gamification, and status lines.
+    """
+    STATS = "5431577498364158238"       # 📊 Stats / Analytics
+    CHART_UP = "5373001317042101552"    # 📈 Growth / Rank
+    CHART_DOWN = "5361748661640372834"  # 📉 Decline
+    PROFILE = "5373012449597335010"     # 👤 User Profile
+    ID_BADGE = "5422683699130933153"    # 🪪 ID Badge / Card
+    TROPHY = "5409008750893734809"      # 🏆 Trophy / XP Award
+    TARGET = "5350460637182993292"      # 🎯 Target / Solved
+    FOLDER = "5433653135799228968"      # 📁 Folder
+    FIRE = "5420315771991497307"        # 🔥 Streak / Flame
+    LIGHTNING = "5431449001532594346"   # ⚡ Energy / Lightning
+    ROCKET = "5445284980978621387"      # 🚀 Rocket / Boost
+    STAR = "5435957248314579621"        # ⭐️ Star / Premium
+    CROWN = "5467406098367521267"       # 👑 Crown / Top 1
+    DIAMOND = "5471952986970267163"     # 💎 Diamond / VIP
+    CHECK = "5427009714745517609"       # ✅ Verified / Success
+    CROSS = "5465665476971471368"       # ❌ Cross / Cancel
+    SPARKLES = "5472164874886846699"    # ✨ Sparkles / Magic
+    LIGHTBULB = "5472146462362048818"   # 💡 Lightbulb / Idea
+    SEARCH = "5188217332748527444"      # 🔍 Search
+    COIN = "5379600444098093058"        # 🪙 Coin
+    ROBOT = "5372981976804366741"       # 🤖 Robot
+    HOURGLASS = "5451732530048802485"   # ⏳ Pending / Timer
+    PARTY = "5436040291507247633"       # 🎉 Celebrate / Win
+    GIFT = "5199749070830197566"        # 🎁 Gift / Reward
+    NOTE = "5334882760735885832"        # 📝 Pencil / Note
+    UZB = "5449829434334912605"         # 🇺🇿 Uzbekistan
+
+
+
 # Mapping of fallback emoji char for each icon
 ICON_FALLBACKS = {
     CommonIcons.BACK: "⬅️",
@@ -109,5 +143,33 @@ ICON_FALLBACKS = {
     CommonIcons.HELP: "❓",
     CommonIcons.ROBOT: "🤖",
     CommonIcons.SPARKLES: "✨",
+    # RestrictedEmoji Animated Fallbacks
+    RestrictedIcons.STATS: "📊",
+    RestrictedIcons.CHART_UP: "📈",
+    RestrictedIcons.CHART_DOWN: "📉",
+    RestrictedIcons.PROFILE: "👤",
+    RestrictedIcons.ID_BADGE: "🪪",
+    RestrictedIcons.TROPHY: "🏆",
+    RestrictedIcons.TARGET: "🎯",
+    RestrictedIcons.FOLDER: "📁",
+    RestrictedIcons.FIRE: "🔥",
+    RestrictedIcons.LIGHTNING: "⚡️",
+    RestrictedIcons.ROCKET: "🚀",
+    RestrictedIcons.STAR: "⭐️",
+    RestrictedIcons.CROWN: "👑",
+    RestrictedIcons.DIAMOND: "💎",
+    RestrictedIcons.CHECK: "✅",
+    RestrictedIcons.CROSS: "❌",
+    RestrictedIcons.SPARKLES: "✨",
+    RestrictedIcons.LIGHTBULB: "💡",
+    RestrictedIcons.SEARCH: "🔍",
+    RestrictedIcons.COIN: "🪙",
+    RestrictedIcons.ROBOT: "🤖",
+    RestrictedIcons.HOURGLASS: "⏳",
+    RestrictedIcons.PARTY: "🎉",
+    RestrictedIcons.GIFT: "🎁",
+    RestrictedIcons.NOTE: "📝",
+    RestrictedIcons.UZB: "🇺🇿",
 }
+
 
