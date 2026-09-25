@@ -93,25 +93,35 @@ async def start_handler(message: types.Message):
 
 ---
 
-## 📐 Telegram Kartochka Qoidalari
+## 📐 Telegram Kartochka va Iqtibosli (Blockquote) Formatlash Qoidalari
 
-Biz ishlab chiqqan va sinovdan o'tgan standart quyidagicha tuziladi:
+Telegram botlarda xabarlarni oddiy qatorlar ko'rinishida emas, **Iqtibosli Kartochka (`<blockquote><i>...</i></blockquote>`)** ko'rinishida yuborish xabarning o'qilishini va ko'rinishini professional darajaga olib chiqadi:
 
+```html
+<b><tg-emoji emoji-id="5431577498364158238">📊</tg-emoji> Shaxsiy Statistika (Sarlavha tashqarida)</b>
+
+<tg-emoji emoji-id="5373012449597335010">👤</tg-emoji> <b>Abbos</b> (@AbbosA)
+<tg-emoji emoji-id="5422683699130933153">🪪</tg-emoji> ID: <code>5654706656</code>
+
+<blockquote><tg-emoji emoji-id="5409008750893734809">🏆</tg-emoji> <b>Umumiy ball (XP):</b> 71 ball
+<tg-emoji emoji-id="5373001317042101552">📈</tg-emoji> <b>Umumiy reytingdagi o'rni:</b> #7
+<tg-emoji emoji-id="5350460637182993292">🎯</tg-emoji> <b>Yechilgan testlar:</b> 11 ta
+<tg-emoji emoji-id="5433653135799228968">📁</tg-emoji> <b>Yaratilgan testlar:</b> 4 ta
+<tg-emoji emoji-id="5420315771991497307">🔥</tg-emoji> <b>Kunlik seriya:</b> 1 kun
+<tg-emoji emoji-id="5431449001532594346">⚡</tg-emoji> <b>Kreditlar balansi:</b> 3288 ta (Standart)
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</blockquote>
+
+<i>Har bir to'g'ri javob uchun +1 XP olasiz va umumiy reytingda ko'tarilasiz! <tg-emoji emoji-id="5445284980978621387">🚀</tg-emoji></i>
+
+<blockquote expandable><i>✅ @quiztestaibot orqali tayyorlandi</i></blockquote>
 ```
-<b><tg-emoji emoji-id="...">👑</tg-emoji> Sarlavha (Blockquote tashqarisida)</b>
 
-<blockquote><i><tg-emoji emoji-id="...">✨</tg-emoji> Birinchi ma'lumot yoki qator
+### Iqtibosli formatlashning 4 ta oltin qoidasi:
+1. **Sarlavha tashqarida:** `<b>...</b>` iqtibosdan tashqarida bo'lishi kerak. Bu unga asosiy e'tiborni qaratadi.
+2. **Tanasi iqtibos ichida (`<blockquote><i>...</i></blockquote>`):** Matnlar iqtibos chizig'i bilan o'rab olinadi, qiya (*italic*) shrift esa uni rasmiy hujjatdek ko'rsatadi.
+3. **Ko'rinmas Spacer (`FULL_WIDTH_SPACER`):** Telegram qisqa matnlarda iqtibos chizig'ini tor qilib qisib qo'yadi. Oxiriga `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀` qo'shilsa, kartochka ham mobil telefonda, ham kompyuterda ekranning to'liq kengligiga chiroyli cho'ziladi.
+4. **Kengayuvchi Imzo (`<blockquote expandable>`):** Bot brendi yoki yordam matni pastda ixcham yig'ilib turadi, foydalanuvchi bosgandagina to'liq ochiladi.
 
-<tg-emoji emoji-id="...">⚡️</tg-emoji> Ikkinchi ma'lumot yoki qator
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</i></blockquote>
-
-<blockquote expandable><i>✅ @BotUsername orqali tayyorlandi</i></blockquote>
-```
-
-### Nima uchun bu tartib eng yaxshisi?
-1. **Sarlavha tashqarida bo'lishi:** Sarlavha iqtibos ichiga kirmaydi va alohida ajralib turadi.
-2. **Ko'rinmas Spacer (`FULL_WIDTH_SPACER`):** Telegram matn uzunligiga qarab xabarni qisib qo'yadi. Ko'rinmas brayl probeli tufayli kartochka doimo to'liq kenglikda va tartibli turadi.
-3. **Kengayuvchi Imzo (`expandable`):** Asosiy xabarga xalaqit bermagan holda pastda bot brendini ko'rsatadi.
 
 ---
 
