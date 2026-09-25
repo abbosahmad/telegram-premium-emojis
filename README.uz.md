@@ -1,5 +1,12 @@
 # Telegram Premium Emojis & UI Toolkit 💎 (O'zbekcha Qo'llanma)
 
+<p align="center">
+  <a href="https://pypi.org/project/telegram-premium-emojis/"><img src="https://img.shields.io/pypi/v/telegram-premium-emojis?color=blue&style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Versiyasi"></a>
+  <img src="https://img.shields.io/badge/Catalog-1%2C920%2B_Custom_Emojis-orange?style=for-the-badge" alt="Katalog">
+  <img src="https://img.shields.io/badge/Aiogram-3.x_Ready-2ea44f?style=for-the-badge" alt="Aiogram 3">
+  <img src="https://img.shields.io/badge/Litsenziya-MIT-green?style=for-the-badge" alt="Litsenziya">
+</p>
+
 Telegram botlarda **Telegram Premium Custom Emojilar**, **Aiogram 3 zamonaviy kartochka UI**, inline tugmalarda maxsus custom emoji ikonkalari (`icon_custom_emoji_id`), rangli tugmalar va pack skanerlari bilan ishlash bo'yicha to'liq ochiq kodli vosita va AI Agent Skill.
 
 ---
@@ -20,9 +27,10 @@ Ushbu kutubxona va AI Skill barcha shu muammolarni bir martada professional dara
 
 ## ✨ Asosiy Imkoniyatlar
 
-- **💎 920+ Saralangan Emojilar Bazasi:** 6 ta eng mashhur pack (`TgAndroidIcons`, `tgmacicons`, `vector_icons_by_fStikBot`, `NewsEmoji`, `RoboEmoji`, `StatusEmoji`) bo'yicha tozalangan va tekshirilgan ID lar.
+- **💎 1 920+ Saralangan Emojilar Bazasi:** 7 ta eng mashhur pack (`RestrictedEmoji`, `TgAndroidIcons`, `tgmacicons`, `vector_icons_by_fStikBot`, `NewsEmoji`, `RoboEmoji`, `StatusEmoji`) bo'yicha tozalangan va tekshirilgan ID lar.
 - **🎴 Qulay `TelegramCard` Generatori:** Sarlavhasi tashqarida, tanasi iqtibosda, to'liq kenglikdagi ko'rinmas spacer va kengayuvchi imzo bilan ideal kartochka yasaydi.
 - **🔘 `build_inline_button` Yordamchisi:** Aiogram 3 da tugma nomini toza saqlash, custom emoji ikonka biriktirish va rang berish (`primary`, `success`, `danger`).
+
 - **🔍 Pack Scanner CLI:** Istalgan ommaviy stiker to'plami nomini kiritib, undagi barcha ishlaydigan custom emoji ID larini avtomatik ajratib oladi.
 - **🛡️ Kod Linter / Validator:** Bot kodingizni tekshirib, xato va ortiqcha emojilarni avtomatik topadi.
 - **🤖 Universal AI Agent Skill (`SKILL.md`):** Antigravity, Claude Code, Cursor kabi AI larni bot dizayni bo'yicha professional darajaga ko'taradi.

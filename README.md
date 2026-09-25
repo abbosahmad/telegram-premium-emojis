@@ -1,11 +1,11 @@
 # Telegram Premium Emojis & UI Toolkit 💎
 
 <p align="center">
+  <a href="https://pypi.org/project/telegram-premium-emojis/"><img src="https://img.shields.io/pypi/v/telegram-premium-emojis?color=blue&style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Version"></a>
   <img src="https://img.shields.io/badge/Telegram_Bot_API-7.0%20%7C%208.0%2B-blue?logo=telegram&style=for-the-badge" alt="Telegram Bot API">
   <img src="https://img.shields.io/badge/Aiogram-3.x_Ready-2ea44f?style=for-the-badge" alt="Aiogram 3">
-  <img src="https://img.shields.io/badge/AI_Agent_Skill-Antigravity_%7C_Claude_%7C_Cursor-purple?style=for-the-badge" alt="Agent Skill">
-  <img src="https://img.shields.io/badge/Catalog-920%2B_Custom_Emojis-orange?style=for-the-badge" alt="Catalog">
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Catalog-1%2C920%2B_Custom_Emojis-orange?style=for-the-badge" alt="Catalog">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
 
 <p align="center">
