@@ -57,7 +57,7 @@ pip install telegram-premium-emojis
 
 Or clone directly for development:
 ```bash
-git clone https://github.com/AbbosPC/telegram-premium-emojis.git
+git clone https://github.com/abbosahmad/telegram-premium-emojis.git
 cd telegram-premium-emojis
 pip install -e ".[dev]"
 ```

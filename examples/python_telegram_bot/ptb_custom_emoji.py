@@ -24,8 +24,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [
-            InlineKeyboardButton("Documentation", url="https://github.com/AbbosPC/telegram-premium-emojis"),
-            InlineKeyboardButton("Catalog", url="https://github.com/AbbosPC/telegram-premium-emojis/tree/main/catalog")
+            InlineKeyboardButton("Documentation", url="https://github.com/abbosahmad/telegram-premium-emojis"),
+            InlineKeyboardButton("Catalog", url="https://github.com/abbosahmad/telegram-premium-emojis/tree/main/catalog")
         ]
     ]
 

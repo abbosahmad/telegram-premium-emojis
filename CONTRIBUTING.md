@@ -21,7 +21,7 @@ If you found a high-quality Telegram custom emoji pack that works well with Tele
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AbbosPC/telegram-premium-emojis.git
+   git clone https://github.com/abbosahmad/telegram-premium-emojis.git
    cd telegram-premium-emojis
    ```
 
