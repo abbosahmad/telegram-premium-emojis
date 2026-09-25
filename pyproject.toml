@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-premium-emojis"
+version = "1.0.0"
+authors = [
+  { name="Abbos", email="abbos@osonpdf.uz" },
+]
+description = "A modern toolkit & AI Agent Skill for Telegram Bot Premium Custom Emojis, Aiogram 3 UI cards, inline keyboard custom emoji icons, and pack scanning."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = [
+    "telegram",
+    "telegram-bot",
+    "aiogram",
+    "custom-emoji",
+    "premium-emoji",
+    "bot-api",
+    "agent-skill"
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+scanner = ["aiohttp>=3.8.0"]
+aiogram = ["aiogram>=3.0.0"]
+dev = ["pytest>=7.0.0", "aiohttp>=3.8.0", "aiogram>=3.0.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/AbbosPC/telegram-premium-emojis"
+"Bug Tracker" = "https://github.com/AbbosPC/telegram-premium-emojis/issues"
+
+[project.scripts]
+tg-emoji-scan = "telegram_premium_emojis.scanner:main"
+tg-emoji-lint = "telegram_premium_emojis.validator:main"
